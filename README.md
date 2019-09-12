@@ -1,2 +1,2 @@
 # chat-room
-chat yourself
+chat with yourself!
