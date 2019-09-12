@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>chat room</title>
+  <link rel="stylesheet" href="css/chat.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1403471_4wapjvg5y7a.css">
+</head>
+
+<body>
+  <section class="page">
+    <!-- top bar -->
+    <header class="top-bar">
+      <div class="my">
+        <div class="avaWrapper">
+          <img class="myAvatar" src="avatar/0.jpg" alt="">
+        </div>
+        <h1 class="myName">你的名字</h1>
+      </div>
+      <div class="tab">
+        <i class="icon iconfont icon-chat"></i>
+        <i class="icon iconfont icon-user"></i>
+      </div>
+      <div class="option">
+        <i class="icon iconfont icon-logout"></i>
+      </div>
+    </header>
+
+    <!-- view -->
+    <main class="view-port">
+      <!-- user -->
+      <ul class="user-list">
+        <li class="user-item user-groups">
+          <div class="avaWrapper">
+            <i class="icon iconfont icon-groups"></i>
+          </div>
+          <div class="text">发起会话</div>
+        </li>
+      </ul>
+
+      <!-- chat -->
+      <div class="chat-box">
+        <div class="user-bar">
+          <h2 class="thatName">发起会话</h2>
+        </div>
+        <div class="message-list active" id="list0">
+          <div class="message-item message-item-left">
+            <div class="avaWrapper">
+              <img class="avatar" src="./avatar/1.jpg" alt="头像">
+            </div>
+            <div class="message-bubble">输入 @UserId 可以发起 新会话</div>
+          </div>
+          <div class="message-item message-item-right">
+            <div class="avaWrapper">
+              <img class="avatar" src="./avatar/0.jpg" alt="头像">
+            </div>
+            <div class="message-bubble">只想输入 "@数字" 怎么办呢？</div>
+          </div>
+          <div class="message-item message-item-left">
+            <div class="avaWrapper">
+              <img class="avatar" src="./avatar/1.jpg" alt="头像">
+            </div>
+            <div class="message-bubble">'@' 后面加空格即可</div>
+          </div>
+          <div class="message-item message-item-right">
+            <div class="avaWrapper">
+              <img class="avatar" src="./avatar/0.jpg" alt="头像">
+            </div>
+            <div class="message-bubble">Got it！</div>
+          </div>
+        </div>
+        <div class="tool-bar">
+          <div class="tool">
+            <div class="tool-item">
+              <i class="icon iconfont icon-smiley"></i>
+            </div>
+            <div class="tool-item">
+              <i class="icon iconfont icon-image"></i>
+            </div>
+            <div class="tool-item">
+              <i class="icon iconfont icon-attach"></i>
+            </div>
+            <div class="tool-item">
+              <i class="icon iconfont icon-folder"></i>
+            </div>
+          </div>
+        </div>
+        <div class="edit-box">
+          <textarea id="edit-text" name="" cols="30" rows="10"></textarea>
+          <div class="send-btn">发送</div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <script src="js/chat.js"></script>
+</body>
+
+</html>
