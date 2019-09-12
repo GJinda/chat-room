@@ -242,8 +242,17 @@ function bindFocusChatEvent() {
 
 function bindEvent() {
   //my info event
-  var thisName = $(".top-bar h1.thisName");
+  // var thisName = $(".top-bar h1.thisName");
   // thisName.innerHTML = ???;
+
+  //title event
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      document.title = "Come back !";
+    } else {
+      document.title = "I'm fine.";
+    }
+  });
 
   //add chat event
   $('.user-groups').onclick = function () {
